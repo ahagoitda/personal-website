@@ -1,25 +1,49 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import HeroSection from "@/components/sections/HeroSection";
+import AboutSection from "@/components/sections/AboutSection";
+import TimelineSection from "@/components/sections/TimelineSection";
+import SkillsSection from "@/components/sections/SkillsSection";
+import ContactSection from "@/components/sections/ContactSection";
+import ScrollProgressBar from "@/components/ScrollProgressBar";
+import MarqueeText from "@/components/MarqueeText";
 
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * DESIGN: Brutalist Typography
+ * 메인 페이지: 모든 섹션을 순서대로 조합.
+ * 섹션 사이에 마퀴 텍스트로 시각적 리듬 생성.
  */
-export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
 
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
+      <ScrollProgressBar />
       <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+        <HeroSection />
+
+        {/* 마퀴 구분자 1 */}
+        <div className="overflow-hidden border-y-[3px] border-[#0a0a0a] bg-[#f5f2ec] py-5">
+          <MarqueeText
+            text="AI ENGINEERING • SEOUL TECH • 인공지능응용학과 • PARK JUNSEO • 서울과학기술대학교"
+            speed={35}
+            className="text-[#0a0a0a]/10"
+          />
+        </div>
+
+        <AboutSection />
+
+        {/* 마퀴 구분자 2 */}
+        <div className="overflow-hidden bg-[#0a0a0a] py-5">
+          <MarqueeText
+            text="EDUCATION • HISTORY • GROWTH • 성장 • 배움 • EXPERIENCE"
+            speed={28}
+            direction="right"
+            className="text-white/5"
+          />
+        </div>
+
+        <TimelineSection />
+        <SkillsSection />
+        <ContactSection />
       </main>
-    </div>
+    </>
   );
 }
