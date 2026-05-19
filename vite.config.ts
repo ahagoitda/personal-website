@@ -207,6 +207,9 @@ const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(
 
 export default defineConfig({
   plugins,
+  // GitHub Pages 배포 시 base 경로 설정
+  // 로컬 개발 및 Manus 배포 시에는 '/', GitHub Pages에서는 '/personal-website/'
+  base: process.env.GITHUB_PAGES === 'true' ? '/personal-website/' : '/',
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
