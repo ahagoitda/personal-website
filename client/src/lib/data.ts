@@ -5,7 +5,7 @@
 
 export const PERSONAL_INFO = {
   name: "박준서",
-  nameEn: "PARK JUNSEO",
+  nameEn: "BAK JUN SEO",
   title: "AI Engineering Student",
   university: "서울과학기술대학교",
   major: "인공지능응용학과",

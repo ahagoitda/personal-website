@@ -22,7 +22,7 @@ export default function Home() {
         {/* 마퀴 구분자 1 */}
         <div className="overflow-hidden border-y-[3px] border-[#0a0a0a] bg-[#f5f2ec] py-5">
           <MarqueeText
-            text="AI ENGINEERING • SEOUL TECH • 인공지능응용학과 • PARK JUNSEO • 서울과학기술대학교"
+            text="AI ENGINEERING • SEOUL TECH • 인공지능응용학과 • BAK JUN SEO • 서울과학기술대학교"
             speed={35}
             className="text-[#0a0a0a]/10"
           />
