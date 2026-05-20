@@ -11,7 +11,8 @@ export const PERSONAL_INFO = {
   major: "인공지능응용학과",
   year: "26학번",
   highSchool: "신성고등학교",
-  email: "contact@parkjunseo.dev",
+  email: "junseobag796@gmail.com",
+  github: "https://github.com/ahagoitda",
   location: "Seoul, South Korea",
   bio: "인공지능의 가능성을 탐구하고, 기술로 세상의 문제를 해결하고자 하는 서울과학기술대학교 인공지능응용학과 학생입니다. 데이터와 알고리즘 너머에 있는 사람의 이야기에 관심을 두고 있습니다.",
 } as const;
@@ -31,7 +32,7 @@ export const TIMELINE: TimelineItem[] = [
     tag: "현재",
   },
   {
-    year: "2025",
+    year: "2026",
     title: "신성고등학교 졸업",
     description: "3년간의 고등학교 생활을 마무리하고, 인공지능 분야로의 진로를 확정.",
     tag: "졸업",

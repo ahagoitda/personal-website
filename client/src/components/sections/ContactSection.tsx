@@ -84,7 +84,7 @@ export default function ContactSection() {
             </div>
 
             <a
-              href="https://github.com"
+              href={PERSONAL_INFO.github}
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-start gap-4 border-t-[3px] border-[#0a0a0a] pt-6 transition-colors"
@@ -95,7 +95,7 @@ export default function ContactSection() {
                   GitHub
                 </span>
                 <p className="mt-1 font-display text-sm font-medium text-[#0a0a0a] underline decoration-[#0a0a0a]/20 underline-offset-4 transition-colors group-hover:decoration-[#0a0a0a] sm:text-base">
-                  github.com
+                  github.com/ahagoitda
                 </p>
               </div>
             </a>
