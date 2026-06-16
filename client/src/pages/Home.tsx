@@ -2,6 +2,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
 import TimelineSection from "@/components/sections/TimelineSection";
 import SkillsSection from "@/components/sections/SkillsSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
 import ContactSection from "@/components/sections/ContactSection";
 import ScrollProgressBar from "@/components/ScrollProgressBar";
 import MarqueeText from "@/components/MarqueeText";
@@ -42,6 +43,17 @@ export default function Home() {
 
         <TimelineSection />
         <SkillsSection />
+
+        {/* 마퀴 구분자 3 */}
+        <div className="overflow-hidden border-y-[3px] border-[#0a0a0a] bg-[#f5f2ec] py-5">
+          <MarqueeText
+            text="GOLAEAT • 골라잇 • BUILT WITH AI • SOLO PROJECT • NOW LIVE • 운영 중"
+            speed={32}
+            className="text-[#0a0a0a]/10"
+          />
+        </div>
+
+        <ProjectsSection />
         <ContactSection />
       </main>
     </>

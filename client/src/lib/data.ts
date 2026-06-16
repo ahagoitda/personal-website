@@ -28,24 +28,53 @@ export const TIMELINE: TimelineItem[] = [
   {
     year: "2026",
     title: "서울과학기술대학교 입학",
-    description: "인공지능응용학과 26학번으로 입학. AI 기초 이론과 프로그래밍 역량을 쌓으며 다양한 프로젝트에 참여 중.",
+    description:
+      "인공지능응용학과 26학번으로 입학. AI 기초 이론과 프로그래밍 역량을 쌓으며 다양한 프로젝트에 참여 중.",
     tag: "현재",
   },
   {
     year: "2026",
     title: "신성고등학교 졸업",
-    description: "3년간의 고등학교 생활을 마무리하고, 인공지능 분야로의 진로를 확정.",
+    description:
+      "3년간의 고등학교 생활을 마무리하고, 인공지능 분야로의 진로를 확정.",
     tag: "졸업",
   },
   {
     year: "2023–2024",
     title: "프로그래밍 & AI 탐구",
-    description: "Python, 머신러닝 기초를 독학하며 개인 프로젝트를 진행. 교내 SW 관련 활동에 적극 참여.",
+    description:
+      "Python, 머신러닝 기초를 독학하며 개인 프로젝트를 진행. 교내 SW 관련 활동에 적극 참여.",
   },
   {
     year: "2022",
     title: "신성고등학교 입학",
-    description: "고등학교에 입학하며 본격적으로 컴퓨터 과학과 인공지능에 대한 관심을 키워나감.",
+    description:
+      "고등학교에 입학하며 본격적으로 컴퓨터 과학과 인공지능에 대한 관심을 키워나감.",
+  },
+];
+
+export interface Project {
+  name: string;
+  nameEn: string;
+  url: string;
+  urlLabel: string;
+  status: string;
+  year: string;
+  description: string;
+  highlights: string[];
+}
+
+export const PROJECTS: Project[] = [
+  {
+    name: "골라잇",
+    nameEn: "GOLAEAT",
+    url: "https://golaeat.com",
+    urlLabel: "golaeat.com",
+    status: "운영 중",
+    year: "2026",
+    description:
+      "기획부터 개발, 디자인, 배포까지 전 과정을 AI를 활용해 혼자서 완성한 웹 서비스입니다. 아이디어를 빠르게 실제 제품으로 구현하고, 현재 실서비스로 운영하고 있습니다.",
+    highlights: ["1인 개발", "AI 활용 풀스택", "현재 운영 중"],
   },
 ];
 

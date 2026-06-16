@@ -11,7 +11,10 @@ import { Mail, MapPin, Github } from "lucide-react";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="relative overflow-hidden bg-[#c8ff00] py-28 sm:py-36 lg:py-44">
+    <section
+      id="contact"
+      className="relative overflow-hidden bg-[#c8ff00] py-28 sm:py-36 lg:py-44"
+    >
       {/* 배경 패턴 - 대각선 */}
       <div className="absolute inset-0 opacity-[0.03]" aria-hidden="true">
         <div
@@ -28,7 +31,7 @@ export default function ContactSection() {
         <ScrollReveal direction="left">
           <div className="mb-8 flex items-center gap-4">
             <span className="font-mono text-[10px] tracking-[0.4em] text-[#0a0a0a]/30 uppercase">
-              04
+              05
             </span>
             <div className="h-[2px] w-12 bg-[#0a0a0a]/20" />
             <span className="font-mono text-[10px] tracking-[0.4em] text-[#0a0a0a]/30 uppercase">
@@ -60,7 +63,10 @@ export default function ContactSection() {
               href={`mailto:${PERSONAL_INFO.email}`}
               className="group flex items-start gap-4 border-t-[3px] border-[#0a0a0a] pt-6 transition-colors"
             >
-              <Mail className="mt-0.5 h-5 w-5 shrink-0 text-[#0a0a0a]/50 transition-colors group-hover:text-[#0a0a0a]" strokeWidth={1.5} />
+              <Mail
+                className="mt-0.5 h-5 w-5 shrink-0 text-[#0a0a0a]/50 transition-colors group-hover:text-[#0a0a0a]"
+                strokeWidth={1.5}
+              />
               <div>
                 <span className="font-mono text-[10px] tracking-[0.3em] text-[#0a0a0a]/40 uppercase">
                   Email
@@ -72,7 +78,10 @@ export default function ContactSection() {
             </a>
 
             <div className="flex items-start gap-4 border-t-[3px] border-[#0a0a0a] pt-6">
-              <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#0a0a0a]/50" strokeWidth={1.5} />
+              <MapPin
+                className="mt-0.5 h-5 w-5 shrink-0 text-[#0a0a0a]/50"
+                strokeWidth={1.5}
+              />
               <div>
                 <span className="font-mono text-[10px] tracking-[0.3em] text-[#0a0a0a]/40 uppercase">
                   Location
@@ -89,7 +98,10 @@ export default function ContactSection() {
               rel="noopener noreferrer"
               className="group flex items-start gap-4 border-t-[3px] border-[#0a0a0a] pt-6 transition-colors"
             >
-              <Github className="mt-0.5 h-5 w-5 shrink-0 text-[#0a0a0a]/50 transition-colors group-hover:text-[#0a0a0a]" strokeWidth={1.5} />
+              <Github
+                className="mt-0.5 h-5 w-5 shrink-0 text-[#0a0a0a]/50 transition-colors group-hover:text-[#0a0a0a]"
+                strokeWidth={1.5}
+              />
               <div>
                 <span className="font-mono text-[10px] tracking-[0.3em] text-[#0a0a0a]/40 uppercase">
                   GitHub
@@ -108,7 +120,8 @@ export default function ContactSection() {
         <footer className="container relative z-10 mt-28 border-t border-[#0a0a0a]/20 pt-8 sm:mt-36">
           <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
             <span className="font-mono text-[10px] tracking-[0.3em] text-[#0a0a0a]/40 uppercase">
-              &copy; {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.
+              &copy; {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights
+              reserved.
             </span>
             <span className="font-mono text-[10px] tracking-[0.3em] text-[#0a0a0a]/40 uppercase">
               {PERSONAL_INFO.university} {PERSONAL_INFO.major}
